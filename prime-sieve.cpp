@@ -13,3 +13,9 @@ void PrimeSieve::printPrimes() {
         std::cout << it << std::endl;
     }
 }
+
+void PrimeSieve::jump() {
+    for (size_t i{}; i < currentNum; i++) iter++;
+}
+
+
