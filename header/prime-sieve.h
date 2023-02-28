@@ -9,8 +9,8 @@ private:
     std::vector<unsigned>::iterator iter;   // Where the iterator is currently
     unsigned max;
     std::vector<unsigned>::iterator currentNum;
+    unsigned count;
     //unsigned currentNum;                    // Multiples we are currently removing ie 3 5 7
-    unsigned currentNumToRemove;            // 9 15 21 etc
 
     void fillVector();
     void removeMultipleOfCurrentNum();      // Removes all multiples of whatever currentNum is rn
@@ -19,13 +19,14 @@ private:
     void incrementCurrentNum();
 
 public:
-    PrimeSieve() :max(100) {
+    PrimeSieve() :max(1'000'00), count() {
         fillVector();
         iter = primes.begin();
         currentNum = primes.begin();
     }
 
     void printPrimes();
+    void printLastPrimes(unsigned amount);
     void sieveVector();
 
 };
