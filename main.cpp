@@ -1,4 +1,4 @@
-#include "prime-number-gen.cpp"
+#include "prime-number-gen.h"
 
 int main() {
     generatePrime(50);
