@@ -16,8 +16,18 @@ void PrimeSieve::printPrimes() {
 
 void PrimeSieve::printLastPrimes(unsigned amount) {
     auto it{ primes.end() };
+    --it;
     for (size_t i{}; i < amount; ++i) {
-        std::cout << *(--it) << std::endl;
+        if (*it == 0)
+        {
+            --i;
+            --it;
+        }
+        else {
+            std::cout << *it << std::endl;
+            --it;
+        }
+        
     }
 }
 

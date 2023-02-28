@@ -19,7 +19,7 @@ private:
     void incrementCurrentNum();
 
 public:
-    PrimeSieve() :max(1'000'00), count() {
+    PrimeSieve() :max(1000'00), count() {
         fillVector();
         iter = primes.begin();
         currentNum = primes.begin();
