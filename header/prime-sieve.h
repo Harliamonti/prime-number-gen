@@ -17,9 +17,10 @@ private:
     void jump();                            // Performs an iterative jump of magnitude CurrentNum
     void resetIterator();
     void incrementCurrentNum();
+    bool isTooHigh();
 
 public:
-    PrimeSieve() :max(1000'00), count() {
+    PrimeSieve() :max(10'000'000), count() {
         fillVector();
         iter = primes.begin();
         currentNum = primes.begin();

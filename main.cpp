@@ -2,20 +2,11 @@
 #include "header/prime-sieve.h"
 
 int main() {
-    // generatePrime(50);
+    generatePrime(10000000);
     PrimeSieve foo;
-    // foo.printPrimes();
-    foo.sieveVector();
-    // foo.printPrimes();
-    foo.printLastPrimes(20);
+    // foo.sieveVector();
+    // foo.printLastPrimes(20);
 
-    std::vector<int> test{ 1, 2, 3, 4, 5 };
-    std::vector<int>::iterator it{ test.begin() };
-    it++;
-    *it = 11;
-    
+ 
 
-    for (auto it : test) {
-        // std::cout << it << std::endl;
-    }
 }

@@ -63,5 +63,12 @@ void PrimeSieve::sieveVector() {
             removeMultipleOfCurrentNum();
             ++currentNum;
         }
+
+        if (isTooHigh()) break;
     }
+}
+
+bool PrimeSieve::isTooHigh() {
+    if( *currentNum * (*currentNum) > max) return true;
+    return false;
 }
